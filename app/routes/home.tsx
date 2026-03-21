@@ -1,12 +1,18 @@
+import Navbar from "components/Navbar";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "ArchVision AI" },
+    { name: "description", content: "ArchVision AI is a platform for creating and sharing AI-generated architecture visualizations." },
   ];
 }
 
 export default function Home() {
-  return <h1 className="text-3xl text-indigo-800 font-extrabold">Hello World</h1>
+  return (
+    <>
+      <Navbar />
+      <h1 className="text-3xl text-indigo-800 font-extrabold">Hello World</h1>
+    </>
+  )
 }
